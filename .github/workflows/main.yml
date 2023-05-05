@@ -1,9 +1,9 @@
-name: CI
+me: CI
 
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -20,5 +20,13 @@ jobs:
         npm install
         npm run-script build
       env:
-        REACT_APP_APIKey: ${{ secrets.REACT_APP_APIKey }}
-        REACT_APP_APISecret: ${{ secrets.REACT_APP_APISecret }}
+        REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENA__API_KEY }}
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build
+
+
