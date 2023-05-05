@@ -23,7 +23,7 @@ jobs:
         REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENAI_API_KEY}}
         
     - name: Deploy
-      uses: MustafaLo/github-pages-deploy-action@4.0.0
+      uses: MustafaLo/movie-app/github-pages-deploy-action@4.0.0
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
