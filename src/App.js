@@ -145,7 +145,7 @@ function App() {
       
 
       <div className= "row d-flex allign-items-center m-4">
-        {(favorites.length != 0) && <MovieListHeading heading="Favorites"/>}
+        {(favorites.length !== 0) && <MovieListHeading heading="Favorites"/>}
       </div>
 
 
