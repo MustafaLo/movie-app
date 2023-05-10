@@ -7,3 +7,16 @@ To get started, make sure you have npm installed and run
 npm run
 ```
 
+### Open AI Integration
+To enable the 'Reccomend Movie' feature, run this command in your terminal at the project's directory
+```
+touch .env
+```
+
+Next, create an enviornment variable named the following and add your own Open AI API Key
+```
+REACT_APP_OPENAI_API_KEY=""
+```
+
+
+
